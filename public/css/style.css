@@ -1,0 +1,231 @@
+
+:root
+{
+    --lg:linear-gradient(rgba(248,17,17,0.5),rgba(90,9,9,0.5));
+    --rgb:rgb(238,129,129);
+    --red:#ff751a;
+    --blue:#66b3ff;
+    --black:#000;
+    --white:#fff;
+    --box-shade:0 .5rem .3rem rgba(0,0,0,0.2);
+}
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+ 
+.main-div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-spacing: 15px;
+    color: white;
+}
+
+#second-div{
+    transform: translate(0, 70%);
+    border-spacing: 15px;
+}
+
+
+
+
+
+html
+{
+    font-size:65.4%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar
+{
+    width:1rem;
+}
+html::-webkit-scrollbar-thumb
+{
+    background:var(--lg);
+}
+section
+{
+    padding: 10rem 9%;
+    min-height: 100vh;
+}
+#menu
+{
+    display: none;
+}
+.header
+{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background: var(--white);
+    box-shadow:var(--box-shade);
+}
+.header .logo 
+{
+    font-size:3rem;
+    text-decoration: none;
+    color:var(--red);
+    font-weight: 600;
+}
+.header .logo span
+{
+    color: var(--blue);
+}
+.header .navbars ul li 
+{
+    list-style: none;
+    display:inline-block;
+    padding:0 1rem;
+}
+.header .navbars ul li a 
+{
+    font-size:1.6rem;
+    text-decoration: none;
+    color:var(--rgb);
+    font-weight:500;
+}
+.header .navbars ul li a:hover 
+{
+    color:var(--blue);
+    transition: all .3s ease;
+}
+.side-bar i
+{
+    font-size:2rem;
+    color: var(--black);
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 1rem;
+    background: #eee;
+    text-align: center;
+}
+.side-bar i:hover
+{
+    background:var(--red);
+    color:var(--white);
+    transition:.5s ease;
+}
+.header .login-frm
+{
+    position: absolute;
+    top:110%;
+    right:-110%;
+    width: 30rem;
+    box-shadow: var(--box-shade);
+    padding:2rem;
+    border-radius:.5rem;
+    background:var(--white);
+    text-align: center;
+}
+.header .login-frm h3
+{
+    font-size:2.3rem;
+    color:var(--red); 
+}
+.header .login-frm span
+{
+    color:var(--blue);
+}
+.header .login-frm .log
+{
+    width:100%;
+    margin:.5rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding:.6rem;
+    font-size:1.2rem;
+    color: var(--black);
+    text-transform: none;
+    border: .2rem solid #eee;
+}
+.btn1
+{
+    width:10rem;
+    padding: 1rem;
+    margin-top: 1.2rem;
+    background:rgb(241,235,235);
+    border: none;
+    border-radius:.5rem;
+    font-size: 1.4rem;
+}
+.login-frm p 
+{
+    font-size:1.2rem;
+    padding: .2rem 0;
+    color:var(--black);
+}
+.login-frm p a 
+{
+    color:var(--red);
+    text-decoration:underline;
+}
+
+.btn
+{
+    width:12rem;
+    padding:1rem;
+    margin-top:1.2rem;
+    color:var(--white);
+    background: var(--lg);
+    border:.1rem solid var(--rgb);
+    font-size: 1.4rem;
+}
+.btn:hover 
+{
+    background:var(--rgb);
+    color:var(--white);
+    transition: all .5s ease;
+}
+.login-frm.active 
+{
+    right: 2rem;
+    transition:.4s ease-in;
+}
+
+
+
+
+/*----------------------------home-section------*/
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../css/img/bio.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top:17rem;
+    padding-bottom: 10rem;
+}
+.home .home-content
+{
+    text-align: center;
+    width:80rem;
+    color: var(--white);
+}
+.home .home-content h3
+{
+    padding:1rem;
+    font-size:5rem;
+    font-weight:600;
+}
+.home .home-content p 
+{
+    font-size:1.6rem;
+    padding: .4rem;
+    line-height: 2.2rem;
+}
+
+
+
