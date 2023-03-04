@@ -19,12 +19,12 @@
 }
 
  
-.main-div {
+.item{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border-spacing: 15px;
-    color: white;
+    color: rgb(36, 4, 4);
 }
 
 #second-div{
@@ -149,28 +149,6 @@ section
     text-transform: none;
     border: .2rem solid #eee;
 }
-.btn1
-{
-    width:10rem;
-    padding: 1rem;
-    margin-top: 1.2rem;
-    background:rgb(241,235,235);
-    border: none;
-    border-radius:.5rem;
-    font-size: 1.4rem;
-}
-.login-frm p 
-{
-    font-size:1.2rem;
-    padding: .2rem 0;
-    color:var(--black);
-}
-.login-frm p a 
-{
-    color:var(--red);
-    text-decoration:underline;
-}
-
 .btn
 {
     width:12rem;
@@ -200,7 +178,7 @@ section
 .home
 {
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
     background-image: url(../css/img/bio.jpg);
     background-position: center;
@@ -227,5 +205,66 @@ section
     line-height: 2.2rem;
 }
 
-
-
+/* media Query  */
+@media(max-width:991px)
+{
+    html
+    {
+        font-size: 54%;
+    }
+    header
+    {
+        padding: 2rem;
+    }
+    section
+    {
+        padding:2rem;
+    }
+}
+@media(max-width:450px)
+{
+    html
+    {
+        font-size:53%
+    }
+}
+@media(max-width:765px)
+{
+    #menu 
+    {
+        display: inline-block;
+    }
+    .header .navbars
+    {
+        position:absolute;
+        top:110%;
+        right:-110%;
+        width:100%;
+        background: #eee;
+        font-size:2rem;
+    }
+    .header .navbars ul li 
+    {
+        margin:2rem 2.5rem;
+        display: block;
+    }
+    .header .navbars ul li:hover 
+    {
+        transform: translateX(.5rem);
+        transition: .5s ease;
+    }
+    .header .navbars.active
+    {
+        right:.5rem;
+        transition:.4s ease;
+    }
+    .home-content
+    {
+        padding:2rem;
+    }
+  
+    .about-sec
+    {
+        display: block;
+    }
+}
