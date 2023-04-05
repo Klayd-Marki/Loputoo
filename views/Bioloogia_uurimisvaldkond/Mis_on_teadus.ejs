@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Mis on teadus?</h1>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <%- include('../partials/head') %>
+        <%- include('../partials/navbars') %>
+            <h1>Mis on teadus?</h1>
 </head>
 
-
-
-<head>
-    <%- include('../partials/head'); %>
-</head>
 
 <body class="container">
     <main>
@@ -34,15 +38,7 @@
                 inimkeele, ajalooteadus inimühiskondade arenemise ja kasvatusteadus kasvatuse ja õpetuse uurimise ja
                 analüüsimisega. Need teadused kuuluvad humanitaarteaduste hulka.</p>
         </div>
-    </main>
-</body>
 
-
-
-
-
-<body class="container">
-    <main>
         <div class="jumbotron">
             <h1>Bioloogia kui teadus</h1>
             <p>Loodust uurivad ja käsitlevad loodusteadused (nt füüsika, keemia, bioloogia). Kõige üldisemaid ja
@@ -55,6 +51,12 @@
         </div>
     </main>
 </body>
+
+
+
+
+
+
 
 
 
@@ -154,133 +156,201 @@
 <body>
 
 
-    <h1>Mõisted:</h1>
 
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item">
-                    <b>Mikrobioloogid</b>
-                    töötavad näiteks toidulaborites, kus nad koos keemikutega analüüsivad toiduproove, et teha
-                    kindlaks, kas toit on kõlblik. Oluline on, et inimesteni jõuaks vaid kvaliteetne toit, mis ei
-                    sisalda haigusi
-                    tekitavaid mikroorganisme ega ole saastunud mürgiste ainetega, nt putukamürkidega.
-                    Toiduainetööstuses hindavad
-                    nad toidu ohutust, kuid nad jälgivad ka, kuidas valmivad mikroobide abil mitmesugused tooted:
-                    jogurt, hapukurgid
-                    jm. Mikrobioloogid osalevad ka keskkonnauuringutes, nad teevad joogi- ja basseinivee, reoveesetete,
-                    pinnase jms
-                    analüüse.
+
+
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+    <!-- FAQ Area-->
+    <div class="col-12 col-sm-10 col-lg-8">
+        <div class="accordion faq-accordian" id="faqAccordion">
+
+
+
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="card-header" id="headingOne">
+                    <h1 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">Mõisted<span class="lni-chevron-up"></span></h1>
+                </div>
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Mikrobioloogid</b>
+                            töötavad näiteks toidulaborites, kus nad koos keemikutega analüüsivad toiduproove, et teha
+                            kindlaks, kas toit on kõlblik. Oluline on, et inimesteni jõuaks vaid kvaliteetne toit, mis
+                            ei
+                            sisalda haigusi
+                            tekitavaid mikroorganisme ega ole saastunud mürgiste ainetega, nt putukamürkidega.
+                            Toiduainetööstuses hindavad
+                            nad toidu ohutust, kuid nad jälgivad ka, kuidas valmivad mikroobide abil mitmesugused
+                            tooted:
+                            jogurt, hapukurgid
+                            jm. Mikrobioloogid osalevad ka keskkonnauuringutes, nad teevad joogi- ja basseinivee,
+                            reoveesetete,
+                            pinnase jms
+                            analüüse.
+                        </div>
+
+
+
+
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item">
-                    <b>Biomeditsiin</b>
-                    on teadusharu, mis ühendab bioloogiat ja arstiteadust. Inimeses toimuva paremaks mõistmiseks ja
-                    mõjutamiseks suudab tippteadus uurida inimorganismi molekulide tasemel. Tartu Ülikooli teadlane Mart
-                    Ustav
-                    töötab koostöös teiste teadlastega välja HI-viiruse vastast vaktsiini, mis kaitseks inimesi selle
-                    ohtliku
-                    viiruse eest. HI-viirus põhjustab rasket haigust AIDS-i, mis muudab inimese vastuvõtlikuks teistele
-                    nakkushaigustele ja vähile.
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Biomeditsiin</b>
+                            on teadusharu, mis ühendab bioloogiat ja arstiteadust. Inimeses toimuva paremaks mõistmiseks
+                            ja
+                            mõjutamiseks suudab tippteadus uurida inimorganismi molekulide tasemel. Tartu Ülikooli
+                            teadlane Mart
+                            Ustav
+                            töötab koostöös teiste teadlastega välja HI-viiruse vastast vaktsiini, mis kaitseks inimesi
+                            selle
+                            ohtliku
+                            viiruse eest. HI-viirus põhjustab rasket haigust AIDS-i, mis muudab inimese vastuvõtlikuks
+                            teistele
+                            nakkushaigustele ja vähile. 
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item">
-                    <b>Merebioloogid</b>
-                    "uurivad mere elustikku ja jälgivad vee seisundit. Nad hindavad kalavarude suurust ja annavad
-                    soovitusi kalapüügi planeerimisel. Koos teiste spetsialistidega hindavad nad avamere tuuleparkide
-                    rajamise,
-                    torujuhtmete ja kaablite merepõhja paigutamise võimalikke mõjusid merekeskkonnale. Mereelustiku
-                    seisundi
-                    tundmine ja inimtegevuse suunamine on looduskaitse seisukohalt tähtis, et liigid säiliks."
+
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Merebioloogid</b>
+                            uurivad mere elustikku ja jälgivad vee seisundit. Nad hindavad kalavarude suurust ja
+                            annavad
+                            soovitusi kalapüügi planeerimisel. Koos teiste spetsialistidega hindavad nad avamere
+                            tuuleparkide
+                            rajamise,
+                            torujuhtmete ja kaablite merepõhja paigutamise võimalikke mõjusid merekeskkonnale.
+                            Mereelustiku
+                            seisundi
+                            tundmine ja inimtegevuse suunamine on looduskaitse seisukohalt tähtis, et liigid säiliks.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
 
-                <div class="item">
-                    <b>Kalakasvatajatel</b>
-                    peavad olema põhjalikud teadmised kalade bioloogiast, et luua kalade kasvatamiseks sobivad
-                    tingimused ja hoida ära neid ohustavaid haigusi. Kalu kasvatatakse enamasti inimese toiduks, kuid ka
-                    looduslike
-                    populatsioonide tugevdamiseks või taastamiseks. Põlula kalakasvatuskeskuses kasvatatakse lõhe- ja
-                    meriforellimarjast kalamaime. Sobivas vanuses lastakse need Põhja-Eesti jõgedesse, et suurendada
-                    sealseid
-                    kalavarusid. Enne vette laskmist kalamaimud märgistatakse, et teadlased saaks teada, kui paljud
-                    neist ellu
-                    jäävad, kuhu nad rändavad, kuidas kasvavad, ja kui paljud neid välja püütakse. Sellise märgistatud
-                    kala
-                    püüdmisest tuleks teada anda RMK kodulehe kaudu.
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Kalakasvatajatel</b>
+                            peavad olema põhjalikud teadmised kalade bioloogiast, et luua kalade kasvatamiseks sobivad
+                            tingimused ja hoida ära neid ohustavaid haigusi. Kalu kasvatatakse enamasti inimese toiduks,
+                            kuid ka
+                            looduslike
+                            populatsioonide tugevdamiseks või taastamiseks. Põlula kalakasvatuskeskuses kasvatatakse
+                            lõhe- ja
+                            meriforellimarjast kalamaime. Sobivas vanuses lastakse need Põhja-Eesti jõgedesse, et
+                            suurendada
+                            sealseid
+                            kalavarusid. Enne vette laskmist kalamaimud märgistatakse, et teadlased saaks teada, kui
+                            paljud
+                            neist ellu
+                            jäävad, kuhu nad rändavad, kuidas kasvavad, ja kui paljud neid välja püütakse. Sellise
+                            märgistatud
+                            kala
+                            püüdmisest tuleks teada anda RMK kodulehe kaudu.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item">
-                    <b>Looduskaitsetöötajad</b>
-                    "hoolitsevad ohustatud liikide ja koosluste säilimise eest. Põhjalikud teadmised zooloogiast
-                    ja botaanikast aitavad otsustada, kuidas looma- ja taimeliike targasti kaitsta. Näiteks koguvad nad
-                    teavet
-                    haruldaseks muutunud kotkaliikide kohta ja jagavad juhiseid, kuidas nende lindude seisukorda
-                    parandada ja
-                    arvukust tõsta. Looduskaitse aitab säilitada elu mitmekesisust."
+
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Looduskaitsetöötajad</b>
+                            hoolitsevad ohustatud liikide ja koosluste säilimise eest. Põhjalikud teadmised zooloogiast
+                            ja botaanikast aitavad otsustada, kuidas looma- ja taimeliike targasti kaitsta. Näiteks
+                            koguvad nad
+                            teavet
+                            haruldaseks muutunud kotkaliikide kohta ja jagavad juhiseid, kuidas nende lindude seisukorda
+                            parandada ja
+                            arvukust tõsta. Looduskaitse aitab säilitada elu mitmekesisust.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item">
-                    <b>Metsandusega</b>
-                    "tegelevatel inimestel on vaja teadmisi nii bioloogiast kui ka metsamajandusest. Nad peavad tundma
-                    nii metsa elustikku ja selles ökosüsteemis valitsevaid seaduspärasusi, puidu esmase töötlemise
-                    tehnoloogiat kui
-                    ka metsanduse kohta käivaid seadusi. Nad kasvatavad ja hooldavad metsi, kust saame vajalikku puitu.
-                    Arukas
-                    majandamine tagab selle, et metsad säilivad ning puidu tootmine on jätkusuutlik."
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Metsandusega</b>
+                            tegelevatel inimestel on vaja teadmisi nii bioloogiast kui ka metsamajandusest. Nad peavad
+                            tundma
+                            nii metsa elustikku ja selles ökosüsteemis valitsevaid seaduspärasusi, puidu esmase
+                            töötlemise
+                            tehnoloogiat kui
+                            ka metsanduse kohta käivaid seadusi. Nad kasvatavad ja hooldavad metsi, kust saame vajalikku
+                            puitu.
+                            Arukas
+                            majandamine tagab selle, et metsad säilivad ning puidu tootmine on jätkusuutlik.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
 
-    <body class="container">
-        <main>
-            <div class="jumbotron">
-                <div class="item"></div>
-                <b>Sordiaretajad</b>
-                "aretavad uusi taimesorte, mis annaksid häid saake, oleksid haiguskindlad ja heade maitseomadustega.
-                Jõgeva Sordiaretuse Instituudis aretatakse uusi kartuli-, teravilja- ja köögiviljasorte. Ühe sordi
-                aretamiseks
-                teevad sageli koostööd mitme maa teadlased. Näiteks on koos Soome teadlastega saadud uued nisusordid
-                „Helle”,
-                „Meri” ja „Mooni”, mis sobivad kasvatamiseks ka meie jahedas kliimas ja millest saab head saiajahu."
+
+            <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        <div class="item">
+                            <b>Sordiaretajad</b>
+                            aretavad uusi taimesorte, mis annaksid häid saake, oleksid haiguskindlad ja heade
+                            maitseomadustega.
+                            Jõgeva Sordiaretuse Instituudis aretatakse uusi kartuli-, teravilja- ja köögiviljasorte. Ühe
+                            sordi
+                            aretamiseks
+                            teevad sageli koostööd mitme maa teadlased. Näiteks on koos Soome teadlastega saadud uued
+                            nisusordid
+                            „Helle”,
+                            „Meri” ja „Mooni”, mis sobivad kasvatamiseks ka meie jahedas kliimas ja millest saab head
+                            saiajahu.
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </main>
-    </body>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
 
